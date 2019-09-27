@@ -58,7 +58,7 @@ def draw(grid, size):
         furthest.append(x[0] + x[1])
     grid[ends[furthest.index(max(furthest))][1]][ends[furthest.index(max(furthest))][0]] = 'E'
 
-    file = "G:/Users/Jozhus/Documents/Python/Mazes/maze " + str(len(grid[0]) - 2) + 'x' + str(len(grid) - 2) + ".txt"
+    file = "Mazes/maze " + str(len(grid[0]) - 2) + 'x' + str(len(grid) - 2) + ".txt"
     index = open(file, 'w')
     for x in grid:
         index.write(''.join(x) + '\n')

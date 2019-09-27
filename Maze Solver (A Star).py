@@ -13,7 +13,7 @@ def getneighbors(curr):
             neighbors.append((x))
     return neighbors
 
-importedmaze = [list(line.rstrip('\n')) for line in open("G:/Users/Jozhus/Documents/Python/Mazes/" + str(input("Maze name: ")) + ".txt")]
+importedmaze = [list(line.rstrip('\n')) for line in open("Mazes/" + str(input("Maze name: ")) + ".txt")]
 
 for y in importedmaze:
     if 'S' in y:
@@ -69,7 +69,7 @@ def draw(grid, size):
     turtle.pu()
     turtle.clear()
 
-    file = "G:/Users/Jozhus/Documents/Python/Mazes/maze " + str(len(grid[0]) - 2) + 'x' + str(len(grid) - 2) + " Solution" + ".txt"
+    file = "Mazes/maze " + str(len(grid[0]) - 2) + 'x' + str(len(grid) - 2) + " Solution" + ".txt"
     index = open(file, 'w')
     for x in grid:
         index.write(''.join(x) + '\n')
